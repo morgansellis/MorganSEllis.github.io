@@ -3,11 +3,11 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Bits & Pieces
-tagline:          'Mostly programming bits'
-description:      'Games programming tutorials.<br>May or may not be work related.'
-url:              https://jamiedstewart.github.io
-baseurl:          
+title:            Morgan S Ellis
+tagline:          'Portfolio'
+description:      'Portfolio of projects<br>and assignments.'
+url:              https://morgansellis.github.io
+baseurl:
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
@@ -34,8 +34,8 @@ sidebar_home_link:  true
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
 github:
-  repo:             https://github.com/jamiedstewart
+  repo:             https://github.com/morgansellis
 twitter:
-  url:            https://www.twitter.com/tshirtwearindrk
+  url:            https://twitter.com/msellis1703
 disqus:
-  shortname: jamiedstewart-github-io
+  shortname: morgansellis.github.io
