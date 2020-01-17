@@ -24,8 +24,8 @@ email: morganellis@connect.glos.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
 This is my website to display my projects that I have undertaken throught
 my years at univeristy
-baseurl: "https://morgansellis.github.io"
-url: "https://github.com/morgansellis"
+baseurl: 
+url: https://jamiedstewart.github.io
 twitter_username: jekyllrb
 github_username:  morgansellis
 
