@@ -1,6 +1,6 @@
 ---
 layout: category
-title: RayCaster Framework
+title: Post
 category: Post
 ---
 
