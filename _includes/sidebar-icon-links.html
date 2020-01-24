@@ -13,6 +13,13 @@
       {% include svg/twitter.svg %}
   </a>
   {% endif %}
+  {% if site.linkedin.url %}
+  <a id="linkedin-link"
+       class="icon" title="LinkedIn" aria-label="LinkedIn"
+       href="{{ site.linkedin.url }}">
+      {% include svg/linkedin.svg %}
+  </a>
+  {% endif %}
 
   {% comment %}
     Check if we have tag or search pages page active before linking to it.
@@ -26,6 +33,7 @@
       {% assign search_page = node %}
     {% endif %}
   {% endfor %}
+  
 
   {% if tags_page %}
     <a id="tags-link"
