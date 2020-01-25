@@ -4,10 +4,7 @@ title: About
 sidebar_link: true
 ---
 
-Hi, I'm Jamie a games programmer and a lecturer on games programming a the <a href="http://www.glos.ac.uk">University of Gloucestershire</a>. 
+Hello, my name is Morgan Ellis and I am currently studying Computer Games Programming at the University of Gloucestershire.
 
-What's this site about, well it's a bunch of programming related things that I find interesting that I haven't necessairly fit into a specific module or lecture session, or just something that I wanted to work on outside of teaching hours. So it's the spare parts or bits and pieces that I wanted to pursue further.
-
-Any opinions expressed here are my own, and not those of any employer that I may have. That said they will all mostly be opinions about code, useless pokémon, and other game related things.
-
-I don't know how frequently updates to this site will occur, sporadically at best. I've got commenting turned on, and a bunch of other things too if you need to get in touch or have questions about any of the content in here.
+I am currently in my second year of the course and I have decided to learn more of the design side of the industry so I have taken modules that involve 3D animations for games and level design. However, this does not mean I am not continuing
+to program. This year I have been diving deeper in game engine scripting in unity, learned how to build a GBA game and I am currently in the process of learning how to use external libraries to create a boid system within c++.
