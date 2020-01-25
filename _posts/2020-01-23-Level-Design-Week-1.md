@@ -59,4 +59,4 @@ After some more discussion we decided it would came up with a better start to th
 
 Now we knew the assets we need to research for the scene we need to make a rough sketch of the map which Jack then digitalised into the image below.
 
-![Inital Map Idea](/assets/images/InitalMap.png "Inital Map")
+![Inital Map Idea](/assets/images/InitialMap.png "Inital Map")
