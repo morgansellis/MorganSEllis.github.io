@@ -59,4 +59,4 @@ Next we needed to do some research into the types of weapons the British and Ger
 
 Now we knew the assets we need to research for the scene we need to make a rough sketch of the map which Jack then digitalised into the image below.
 
-![Inital Map Idea](/assets/images/InitialMap.png "Inital Map")
+![Inital Map Idea](/assets/images/InitialMap.png "Initial Map")
