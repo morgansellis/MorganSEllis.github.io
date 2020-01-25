@@ -36,9 +36,9 @@ sidebar_home_link:  true
 github:
   repo:             https://github.com/morgansellis
 twitter:
-  url:            https://www.linkedin.com/in/morgan-ellis-1a31a3196/
-linkedin:
   url:            https://twitter.com/msellis1703
+linkedin:
+  url:            https://www.linkedin.com/in/morgan-ellis-1a31a3196/
 
 disqus:
   shortname: morgansellis.github.io
