@@ -2,7 +2,7 @@
 layout: post
 title: "3D Animations - Week 1"
 categories:
-  - CT5036 - 3D Animations
+  - CT5008 - 3D Animations
 tags:
 ---
 
