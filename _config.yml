@@ -15,8 +15,8 @@ baseurl:
                   # sidebar_blog_link below.
 
 author:
-  name:           'Jamie Stewart'
-  url:            https://twitter.com/tshirtwearindrk
+  name:           
+  url:            
 
 paginate:         5
 # paginate_path:    '/page:num'
