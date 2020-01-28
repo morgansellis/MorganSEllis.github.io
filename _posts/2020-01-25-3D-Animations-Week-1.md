@@ -23,3 +23,8 @@ During the first lecture of level design of semester two our assignment was told
 After coming up with these initial ideas I thought to create a mood board to help be get an understanding of what the 1940s were like.
 
 ![Mood Board](/assets/images/MoodBoard.png "Mood Board")
+
+After looking through my mood board and the initial ideas I had I created the following story board.
+
+![Story Board 1](/assets/images/CT5008 - Story Board-2.png "Story Board")
+![Story Board 2](/assets/images/CT5008 - Story Board-3.png "Story Board")
