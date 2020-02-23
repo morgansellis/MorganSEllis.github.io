@@ -40,4 +40,46 @@ public class TransformInfo : MonoBehaviour
 }
 ```  
 
-This script will create a Vecto3 to store the position of a line and a quaternion to store the rotations of the lines.
+This script will create a Vector3 to store the position of a line and a quaternion to store the rotations of the lines.
+
+Once the script has been completed you will want to navigate back to the scripts folder and create a new script called 'LSystemsGeneration.cs'. Go ahead and open this file, first of all we are going to add System, this will help us to use System.text, next we will add System.text, this allows us to edit unity text fields such as the ones used to display text in UI, finally we are going to add UnityEngine.UI, this allows us to edit unity UI from within scripts.
+
+The next step is to start creating some variables, first of all we are going to create our number variables, we are going to need an angle float variable for which controls the angles of the branches, then a length float variable to control how many units forward the trees are going to go, next a width float variable for how wide we want our trees to be, now an iterations integer variable needs to be create to define how big we want our tree to be, an integer has been used instead of a float because we don't want half a iteration, finally a fieldofView float is made to define the starting FOV of the camera.
+
+Now we need to create our axiom, this can just be a simple string variable and the same for the currentString variable but we want to initialise this variable to be an empty string.
+
+Next we need to create a dictionary that accepts a char as its key and a string as its value. A stack also needs to be used so we can keep track of the position and rotation of our branches and it does this using the position and rotation variables made in the transforminfo.cs script.
+
+Four game objects need to be created, one called treeParent, one called branch, one called treeSegment and one called Tree and we want the Tree game object to be initialised to null.
+
+
+```cs
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+using UnityEngine;
+using System;
+using UnityEngine.UI;
+
+public class LSystemGeneration : MonoBehaviour
+{
+    /// <summary>
+    /// Setting up some varialbes that will be used to controll the size of our trees, angle and the iterations
+    /// </summary>
+    private float angle;
+    private float length;
+    private float width;
+    private int iterations;
+    public float fieldOfView;
+
+    private string axiom; // this is the starting state for the generation and will not be changed unless a new pattern is required
+    private string currentString = string.Empty; // This will be used to store the current pattern
+
+    [SerializeField] private Dictionary<char, string> rules; // creates a dictionary that takes a char as its key and a string as the value
+    private Stack<TransformInfo> transformStack; // by using the transforminfo script we can create a stack using the info in the script
+
+    [SerializeField] private GameObject treeParent; // This groups together our branches under a single parent
+    [SerializeField] private GameObject branch; // This is what will make up our trees
+    private GameObject Tree = null; // creates an gameobject which is empty
+    private GameObject treeSegment; // this will be used to give our individual branches settings based on the pattern
+  ```
