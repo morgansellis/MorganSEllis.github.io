@@ -7,4 +7,4 @@ tags:
   - CV
 ---
 
-[Intro.pdf](https://github.com/morgansellis/morgansellis.github.io/blob/master/docs/CURRICULUMVITAE.pdf)
+https://docs.google.com/viewer?url=https://raw.github.com/morgansellis/morgansellis.github.io/blob/master/docs/CURRICULUMVITAE.pdf
