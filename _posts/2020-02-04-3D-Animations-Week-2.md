@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "3D Animations - Week 2"
+title: "3D Animations - Animatic"
 categories:
-  - CT5008 - 3D Animations
+  - Blog
 tags:
+  - 2D Animations
 ---
 
 After completing my story board I decided to create an animatic, I have never done this before so I began looking into the process of creating an animatic. Through my research I discovered it is made
