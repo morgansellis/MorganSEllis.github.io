@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Level Design - Week 1"
+title: "Level Design - Initial Idea"
 categories:
   - Blog
 tags:
