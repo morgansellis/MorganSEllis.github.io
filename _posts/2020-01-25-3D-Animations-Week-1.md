@@ -3,6 +3,7 @@ layout: post
 title: "3D Animations - Initial Idea"
 categories:
   - Blog
+  - index
 tags:
   - 3D Animations
 ---
