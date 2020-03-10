@@ -11,7 +11,7 @@ tags:
 
 For my assignment in semester one I needed to choose a topic from one of my lectures to create a video tutorial that could be used to teach someone about a chosen subject. I chose to create a video tutorial on L-systems, the process of procedurally creating trees and other assets through predefined rules. Additionally, I created an accompanying UI so the user could input their own rules and see how the trees change. You can follow along with the below tutorial video or with the written guide below.
 
-[![](http://img.youtube.com/vi/HAgKdvAcR5g/0.jpg)](http://www.youtube.com/watch?v=HAgKdvAcR5g "")
+<iframe width="1200" height="800" src="https://www.youtube.com/embed/AWDEfN0eeWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## History of L-Systems
 First of all, lets talk about what L-Systems are and how the work. The L-System was create by Hungarian Aristid Lindenmayer and they were originally known as Lindemayer Systems but the name was shortened to L-Systems, they were originally created to describe the behaviour and growth patterns of plant cells but we can also apply these techniques to create our own plants and trees within video games.
