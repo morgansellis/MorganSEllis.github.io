@@ -1,6 +1,6 @@
 ---
 layout: category
-title: CV
+title: Curriculum Vitae
 category: CV
 ---
 
