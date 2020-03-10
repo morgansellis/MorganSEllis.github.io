@@ -3,6 +3,7 @@ layout: post
 title: "Game Engine Scripting - Semester 1 Project"
 categories:
   - Projects
+  - index
 tags:
   - Game Engine Scripting
   - Projects
