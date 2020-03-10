@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: category
 title: Home
 category: index
 ---
