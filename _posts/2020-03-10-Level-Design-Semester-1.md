@@ -8,5 +8,4 @@ tags:
   - Projects
 ---
 
-Level Design
-<a href="https://github.com/morgansellis/morgansellis.github.io/blob/master/docs/CT5016-s1800644-CTF-Factory-MorganEllis-100320-2006-146.pdf" target="_blank">My CV.</a>
+<iframe src="<iframe src="https://docs.google.com/document/d/e/2PACX-1vRKAH8TtBtZPacXc3OzBXxv0oSsHH9NXdtEVIBqEeex2UOdprPGkn1uAsFZVYvYIg/pub?embedded=true"></iframe>" width="1200" height="1200"></iframe>
