@@ -2,8 +2,11 @@
 layout: post
 title: "Game Engine Scripting - Semester 1 Project"
 categories:
-  - CT5009 - Game Engine Scripting
+  - Projects
 tags:
+  - Game Engine Scripting
+  - Projects
+  - Tutorial
 ---
 
 For my assignment in semester one I needed to choose a topic from one of my lectures to create a video tutorial that could be used to teach someone about a chosen subject. I chose to create a video tutorial on L-systems, the process of procedurally creating trees and other assets through predefined rules. Additionally, I created an accompanying UI so the user could input their own rules and see how the trees change. You can follow along with the below tutorial video or with the written guide below.
