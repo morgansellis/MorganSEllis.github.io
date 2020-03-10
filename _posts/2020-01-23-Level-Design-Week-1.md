@@ -3,6 +3,7 @@ layout: post
 title: "Level Design - Initial Idea"
 categories:
   - Blog
+  - index
 tags:
   - Level Design
 ---
