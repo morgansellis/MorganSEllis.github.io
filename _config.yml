@@ -7,7 +7,7 @@ title:            Morgan S Ellis
 tagline:          'Portfolio'
 description:      'Portfolio of projects<br>and assignments.'
 url:              https://morgansellis.github.io
-baseurl:
+baseurl:          https://morgansellis.github.io/about.html
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
