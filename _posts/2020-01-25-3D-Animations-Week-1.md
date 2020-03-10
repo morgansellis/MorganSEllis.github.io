@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "3D Animations - Week 1"
+title: "3D Animations - Initial Idea"
 categories:
-  - CT5008 - 3D Animations
+  - Blog
 tags:
+  - 3D Animations
 ---
 
 During the first lecture of level design of semester two our assignment was told to me. I would need to create a game trailer within 3ds max that needs to lasts 20-30 seconds. Wihtin this trailer I need to create one fully rigged and animated character, an elaborate prop and an environment.
