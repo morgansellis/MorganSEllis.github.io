@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-category: Blog
+category: index
 ---
 
 This is the home page
