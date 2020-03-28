@@ -19,7 +19,7 @@ For my first assignment of 3D modelling I needed to create a poster portfolio of
 
 ## Bottle
 
-![Bottle Poster](/assets/images/Assessment%201%20-%20Bottle%20Poster-01.png "Bottle Poster")
+![Bottle Poster](/assets/images/Assessment 1 - Bottle Poster-01.png "Bottle Poster")
 
 <div class="sketchfab-embed-wrapper">
     <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/383328deb18f4decad379e372cc41a9d/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
