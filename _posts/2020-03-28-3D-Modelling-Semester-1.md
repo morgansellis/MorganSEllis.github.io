@@ -19,7 +19,7 @@ For my first assignment of 3D modelling I needed to create a poster portfolio of
 
 ## Bottle
 
-![Bottle Poster](/assets/images/Assessment 1 - Bottle Poster-01.png "Bottle Poster")
+![Bottle Poster](/assets/images/Assessment 1 - Bottle Poster-01.png =1080x720 "Bottle Poster")
 
 <div class="sketchfab-embed-wrapper">
     <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/383328deb18f4decad379e372cc41a9d/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -33,7 +33,7 @@ For my first assignment of 3D modelling I needed to create a poster portfolio of
 ## Clock
 
 
-![Clock Poster](/assets/images/Assessment 1 - Clock Poster-01.png "Clock Poster")
+![Clock Poster](/assets/images/Assessment 1 - Clock Poster-01.png =1080x720 "Clock Poster")
 
 
 <div class="sketchfab-embed-wrapper">
@@ -48,7 +48,7 @@ For my first assignment of 3D modelling I needed to create a poster portfolio of
 
 ## Weapon
 
-![Weapon Poster](/assets/images/Assessment 1 - Weapon Poster-01.png "Weapon Poster")
+![Weapon Poster](/assets/images/Assessment 1 - Weapon Poster-01.png =1080x720 "Weapon Poster")
 
 <div class="sketchfab-embed-wrapper">
     <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/0acb1d737c0641be88d6cd10881fd069/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
