@@ -63,3 +63,12 @@ For my first assignment of 3D modelling I needed to create a poster portfolio of
 ## Log Cabin
 
 ![Log Cabin Poster](/assets/images/Assessment 1 Log Cabin Poster-01.png =1080x720 "Weapon Poster")
+
+<div class="sketchfab-embed-wrapper">
+    <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/fdd1f383bb054608a46c2be09c92e2bc/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+        <a href="https://sketchfab.com/3d-models/assessment-4-log-cabin-fdd1f383bb054608a46c2be09c92e2bc?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Assessment 4 - Log Cabin</a>
+        by <a href="https://sketchfab.com/Morgan_Ellis?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Morgan_Ellis</a>
+        on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+    </p>
+</div>
