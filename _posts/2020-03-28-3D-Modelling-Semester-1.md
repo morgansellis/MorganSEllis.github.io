@@ -62,4 +62,4 @@ For my first assignment of 3D modelling I needed to create a poster portfolio of
 
 ## Log Cabin
 
-![Log Cabin Poster](/assets/images/Assessment 1 Log Cabin Poster-01.png "Weapon Poster")
+![Log Cabin Poster](/assets/images/Assessment 1 Log Cabin Poster-01.png =1080x720 "Weapon Poster")
