@@ -71,7 +71,7 @@ For my first assignment of 3D modelling I needed to create a poster portfolio of
 
 ## Venus Fly Trap<br/>
 
-![Log Cabin Poster](/assets/images/Assessment 5 - Venus Fly Trap Poster-01.png "Weapon Poster")<br/>
+![Venus Fly Trap Poster](/assets/images/Assessment 5 - Venus Fly Trap Poster-01.png "Venus Fly Trap Poster")<br/>
 
 <div class="sketchfab-embed-wrapper">
     <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/4b02809f79a54b48b890596ddf00e10f/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
