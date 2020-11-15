@@ -32,7 +32,7 @@ The rules are normally replacement rules, e.g. F = F+F-F-F+F, this means after e
 ## The Implementation
 First of all, you need to create a new unity project and call it 'L-Systems'. Once you have created a new project navigate to your project tab and create three new folders, one called Scripts, another called UI Assets and a final one called Prefabs. Now with these three folders created navigate to your scripts folder and create a new script called 'TransformInfo.cs'
 
-```cs
+```csharp
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -56,7 +56,7 @@ Next we need to create a dictionary that accepts a char as its key and a string 
 
 Four game objects need to be created, one called treeParent, one called branch, one called treeSegment and one called Tree and we want the Tree game object to be initialised to null.
 
-```cs
+```csharp
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
@@ -85,12 +85,13 @@ public class LSystemGeneration : MonoBehaviour
     [SerializeField] private GameObject branch; // This is what will make up our trees
     private GameObject Tree = null; // creates an gameobject which is empty
     private GameObject treeSegment; // this will be used to give our individual branches settings based on the pattern
+}
 ```
 
 Next is to create our input fields that will be used to update the sizes of our trees, the dictionary and the actual buttons that will be used to generate the tree. We also define two colours which will be used to color our trees, however on the 'endcolour' is used. Finally we create strings that will be used to store are axiom and the rules for the dictionary.
 
 
-```cs
+```csharp
   /// <summary>
   /// This is a group of UI elements that control the scene when in play mode
   /// </summary>
@@ -110,13 +111,14 @@ Next is to create our input fields that will be used to update the sizes of our 
 
   private string inputFieldAxiom;
   private string inputFieldRules;
+}
 ```
 
 The start function is used to create a new stack to store the position and rotations of our branches. A new dictionary is created that takes a character as the key and a string as the value. Finally the current string we are using is set to the current value of the axiom.
 
 The update function allows the field of view to be adjusted via the a slider on the UI, the 'OnGUI()' function allows us to use our FOVSlider and the if statements allow us to move the camera around the scene to view the tree.
 
-```cs
+```csharp
 void Start()
 {
     transformStack = new Stack<TransformInfo>();
@@ -154,7 +156,7 @@ void Update()
 
 The 'generate' function is the bulk function of the program that is responsible for creating the trees. The start of this function creates a tree and a new stringbuilder function as well as defining a line renderer component. Next a loop is used to loop search through the rules and if this character is in our rules we use the corrisponding rules as the new current string and if the key cannot be found in rules then this key is used as the current string.
 
-```cs
+```csharp
 /// <summary>
 /// The bulk function of the program that is responsible for talking in the value of the strings and comparing this to the rule set of the alphabet and building the tree
 /// </summary>
@@ -177,14 +179,15 @@ public void Generate()
         currentString = sb.ToString();
         sb = new StringBuilder();
     }
+}
 ```
 
-The next portion of the 'generate' function makes 
+The next portion of the 'generate' function uses the same foreach loop as seen above but it uses a switch statement to evaluate if a character relates to an action. As seen below if there is a capital 'f' in the string then a vector is created to store the initial position of our tree and moves the tree forward based on the length. Next a branch is instantiated as a new gameobject called treeSegment, this gameobject has its positions, width, material and colour set and this is set as a child to another gameobject called treeParent. The '+' and '-' is used to tell the rotation of a branch based on the angle given by the user and the brackets ae used to push and pop information into our stack.
 
 ```cs
     foreach (char c in currentString)
         {
-            switch (c)
+          switch (c)
             {
                 case 'F':
 
@@ -239,4 +242,75 @@ The next portion of the 'generate' function makes
         Debug.Log(currentString);
         Debug.Log("Generate");
     }
+}
+```
+
+```csharp
+/// <summary>
+/// This is responsible for calling the generate function when we click generate and the resetvalues function when we click the reset button.
+/// </summary>
+public void OnEnable()
+{
+    generateButton.onClick.AddListener(Generate);
+    resetButton.onClick.AddListener(ResetValues);
+    addtodictionary.onClick.AddListener(AddToDictionary);
+}
+
+/// <summary>
+/// This takes our values from the input fields and assigns them to our original values for the angle, width, height and iterations. Parse allows use to
+/// convert string values into floats and integers.
+/// </summary>
+private void AddValues()
+{
+    angle = float.Parse(inputFieldAngle.text);
+    length = float.Parse(inputFieldHeight.text);
+    width = float.Parse(inputFieldWidth.text);
+    iterations = int.Parse(inputFieldIterations.text);
+    Debug.Log("Add Values Iterations: " + iterations);
+}
+
+/// <summary>
+/// This resets the inputted data from our fields but also the values we inputted and puts the currentString back to the axiom else the function will not reset and
+/// will continue to build off the previous generation
+/// </summary>
+private void ResetValues()
+{
+    inputFieldAngle.text = "";
+    inputFieldHeight.text = "";
+    inputFieldWidth.text = "";
+    inputFieldIterations.text = "";
+
+    currentString = axiom;
+
+    angle = 0.0f;
+    length = 0.0f;
+    width = 0.0f;
+    iterations = 0;
+}
+
+private void AddToDictionary()
+{
+    inputFieldAxiom = inputFieldKey.text;
+    inputFieldRules = inputFieldValue.text;
+    Debug.Log(inputFieldAxiom);
+
+    rules.Add(inputFieldAxiom[0], inputFieldRules);
+    foreach (KeyValuePair<char, string> kvp in rules)
+    {
+        //textBox3.Text += ("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
+       Debug.Log("Key = {0}, Value = {1}" + " " + kvp.Key + " " + kvp.Value);
+    }
+}
+
+/// <summary>
+/// This function is responsible for controlling our FOV Slider
+/// </summary>
+void OnGUI()
+{
+    float min = 20.0f;
+    float max = 179.0f;
+    FOVSlider.minValue = min;
+    FOVSlider.maxValue = max;
+    Camera.main.fieldOfView = FOVSlider.value;
+}
 ```
