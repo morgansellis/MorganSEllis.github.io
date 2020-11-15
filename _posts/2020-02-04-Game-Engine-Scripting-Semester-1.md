@@ -56,7 +56,6 @@ Next we need to create a dictionary that accepts a char as its key and a string 
 
 Four game objects need to be created, one called treeParent, one called branch, one called treeSegment and one called Tree and we want the Tree game object to be initialised to null.
 
-
 ```cs
 using System.Collections;
 using System.Collections.Generic;
@@ -86,4 +85,29 @@ public class LSystemGeneration : MonoBehaviour
     [SerializeField] private GameObject branch; // This is what will make up our trees
     private GameObject Tree = null; // creates an gameobject which is empty
     private GameObject treeSegment; // this will be used to give our individual branches settings based on the pattern
-  ```
+```
+
+Next is to create our input fields that will be used to update the sizes of our trees, the dictionary and the actual buttons that will be used to generate the tree. We also define two colours which will be used to color our trees, however on the 'endcolour' is used. Finally we create strings that will be used to store are axiom and the rules for the dictionary.
+
+
+```cs
+  /// <summary>
+  /// This is a group of UI elements that control the scene when in play mode
+  /// </summary>
+  [SerializeField] private InputField inputFieldAngle;
+  [SerializeField] private InputField inputFieldHeight;
+  [SerializeField] private InputField inputFieldWidth;
+  [SerializeField] private InputField inputFieldIterations;
+  [SerializeField] private InputField inputFieldKey;
+  [SerializeField] private InputField inputFieldValue;
+  [SerializeField] private Button generateButton;
+  [SerializeField] private Button resetButton;
+  [SerializeField] private Button addtodictionary;
+  [SerializeField] private Slider FOVSlider;
+
+  private Color startColour = new Color(139, 69, 19, 0);
+  private Color endColour = Color.green;
+
+  private string inputFieldAxiom;
+  private string inputFieldRules;
+```
