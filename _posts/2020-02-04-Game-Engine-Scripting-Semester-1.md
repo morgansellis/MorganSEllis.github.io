@@ -111,3 +111,132 @@ Next is to create our input fields that will be used to update the sizes of our 
   private string inputFieldAxiom;
   private string inputFieldRules;
 ```
+
+The start function is used to create a new stack to store the position and rotations of our branches. A new dictionary is created that takes a character as the key and a string as the value. Finally the current string we are using is set to the current value of the axiom.
+
+The update function allows the field of view to be adjusted via the a slider on the UI, the 'OnGUI()' function allows us to use our FOVSlider and the if statements allow us to move the camera around the scene to view the tree.
+
+```cs
+void Start()
+{
+    transformStack = new Stack<TransformInfo>();
+    rules = new Dictionary<char, string> // This is the current rules the program will be running through and building on
+    {
+
+    };
+
+    transform.Rotate(Vector3.right * -90.0f); // this ensures that the tree is facing up in the
+
+    currentString = axiom; // set the string we want to read from the dictionary to the axiom
+}
+
+void Update()
+{
+    Camera.main.fieldOfView = fieldOfView;
+
+    OnGUI(); // each frame call our on gui function which controls the FOV Slider
+
+    int moveSpeed = 20; // This is a magic number which is user to control how quick you can pan up and down
+
+    /// <summary>
+    /// These functions are used to move the camera up and down
+    /// </summary>
+    if (Input.GetKey(KeyCode.Q))
+    {
+        Camera.main.transform.position += Vector3.up * moveSpeed * Time.deltaTime;
+    }
+    else if (Input.GetKey(KeyCode.E))
+    {
+        Camera.main.transform.position += -Vector3.up * moveSpeed * Time.deltaTime;
+    }
+}
+```
+
+The 'generate' function is the bulk function of the program that is responsible for creating the trees. The start of this function creates a tree and a new stringbuilder function as well as defining a line renderer component. Next a loop is used to loop search through the rules and if this character is in our rules we use the corrisponding rules as the new current string and if the key cannot be found in rules then this key is used as the current string.
+
+```cs
+/// <summary>
+/// The bulk function of the program that is responsible for talking in the value of the strings and comparing this to the rule set of the alphabet and building the tree
+/// </summary>
+public void Generate()
+{
+    AddValues(); // Call are AddValues function that takes the user inputs and uses them to create the tree
+    Destroy(Tree);
+
+    Tree = Instantiate(treeParent);
+    StringBuilder sb = new StringBuilder();
+
+    LineRenderer lineRenderer = GetComponent<LineRenderer>();
+
+    for (int i = 0; i < iterations; i++)
+    {
+        foreach (char c in currentString)
+        {
+            sb.Append(rules.ContainsKey(c) ? rules[c] : c.ToString());
+        }
+        currentString = sb.ToString();
+        sb = new StringBuilder();
+    }
+```
+
+The next portion of the 'generate' function makes 
+
+```cs
+    foreach (char c in currentString)
+        {
+            switch (c)
+            {
+                case 'F':
+
+                    // set intialPosition to a position part of a transform componenet which allows for the position of the
+                    // branches to be changed
+                    Vector3 initialPosition = transform.position;
+                    transform.Translate(Vector3.forward * length); // This moves the transform up based on the value on length
+
+                    treeSegment = Instantiate(branch); // creates a new branch under the gameobject treesegment
+                    treeSegment.GetComponent<LineRenderer>().SetPosition(0, initialPosition); // set the starting position of this branch to initial position
+                    treeSegment.GetComponent<LineRenderer>().SetPosition(1, transform.position); // set the final position of this branch to the transform
+                    treeSegment.GetComponent<LineRenderer>().startWidth = width; // How wide we want the branches at the start
+                    treeSegment.GetComponent<LineRenderer>().endWidth = width; // How wide we want the branches at the end
+                    treeSegment.GetComponent<LineRenderer>().material = new Material(Shader.Find("Sprites/Default")); // Create a new material so we can change the colour of the line renderer
+                    treeSegment.GetComponent<LineRenderer>().startColor = endColour; // Set the startcolour to our defined start colour
+                    treeSegment.GetComponent<LineRenderer>().endColor = endColour; // Set the endcolour to our defined end colour
+                    treeSegment.transform.SetParent(Tree.transform); // Attach all these branches to a single parent to organise the heirarchy
+
+                    break;
+                case 'X': // if there is a X in the rule set then no action is performed
+                    break;
+                case 'Y':
+                    break;
+                case '+':
+                    transform.Rotate(Vector3.up * angle); // A plus is going to rotate the branch using the positive value of our defined angle
+                    break;
+                case '-':
+                    transform.Rotate(Vector3.up * -angle); // A minus is going to rotate the branch using the negative value of our defined angle
+                    break;
+                case '[':
+                    transformStack.Push(new TransformInfo() // Adds this information into our transform stack to be used
+                    {
+                        position = transform.position,
+                        rotation = transform.rotation
+                    });
+
+                    break;
+                case ']':
+                    {
+                        TransformInfo ti = transformStack.Pop(); // removes this information from our transform stack
+                        transform.position = ti.position;
+                        transform.rotation = ti.rotation;
+                    }
+                    break;
+                default:
+                    throw new InvalidOperationException("Invalid L-tree operation"); // if something was in the rule set that was not defined this error will be thrown.
+            }
+        }
+
+        length /= 2; // after the for loop if done the length and width are halved.
+        width /= 2;
+        Debug.Log(currentString);
+        Debug.Log("Generate");
+    }
+```
