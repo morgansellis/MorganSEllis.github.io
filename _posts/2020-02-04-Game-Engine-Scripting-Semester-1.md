@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Game Engine Scripting - Semester 1 Project"
+title: "Game Engine Scripting - Year 2 - Semester 1"
 categories:
   - Projects
   - index

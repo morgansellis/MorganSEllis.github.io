@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "3D Modelling - Semester 1"
+title: "3D Modelling - Year 1 - Semester 1"
 categories:
   - Projects
 tags:
