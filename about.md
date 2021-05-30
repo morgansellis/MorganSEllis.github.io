@@ -6,5 +6,10 @@ sidebar_link: true
 
 Hello, my name is Morgan Ellis and I am currently studying Computer Games Programming at the University of Gloucestershire.
 
-I am currently in my second year of the course and I have decided to learn more of the design side of the industry so I have taken modules that involve 3D animations for games and level design. However, this does not mean I am not continuing
-to program. This year I have been diving deeper in game engine scripting in unity, learned how to build a GBA game and I am currently in the process of learning how to use external libraries to create a boid system within c++.
+I am currently in my third year and have been studying 6 modules this year which are all based around programming, the six modules are as follow:
+        * CT6007 - Individual Research Project <a href="http://www.glos.ac.uk">University of Gloucestershire</a>.
+        * CT6008 - Advanced Group Project
+        * CT6010 - Advanced Concepts in Programming
+        * CT6018 - Indie Game Development
+        * CT6024 - Advanced AI Programming
+        * CT6025 - Graphics Programming with Shaders
