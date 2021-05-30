@@ -7,6 +7,7 @@ tags:
   - Projects
   - 3D Modelling
   - Semester 2
+  - Year 1
 ---
 
 For my semester 2 project in 3D modelling I need to create a 3D character and a scene that reflected the theme of lost treasure. My choice of lost treasure was a cure to a disease that had been taken and needed to be retrieved to save humanity.

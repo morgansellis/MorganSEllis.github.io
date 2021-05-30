@@ -7,6 +7,7 @@ tags:
   - Projects
   - 3D Modelling
   - Semester 2
+  - Year 1
 ---
 
 For my first assignment of 3D modelling I needed to create a poster portfolio of 3D designs. The six designs I need to create were:
